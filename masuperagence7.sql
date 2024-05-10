@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 10 mai 2024 à 12:43
+-- Généré le : ven. 10 mai 2024 à 13:51
 -- Version du serveur : 10.4.32-MariaDB
 -- Version de PHP : 8.2.12
 
@@ -119,9 +119,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `roles`, `password`, `email`) VALUES
-(1, 'sofi', '[]', '$2y$13$6G.IFfx..Id8JQoHH0XYvuBJr9aBA/XuL9BvAyMSuyF1Qcr7R3cxm', 'safietou@gmail.com'),
-(2, 'mama', '[]', '$2y$13$Z0AgJydcFHlCcA3WnFRi7OEDT6ZlzblO4CZcagqz4AhtFlS81GpwG', 'ma@gmail.com'),
-(3, 'modou', '[]', '$2y$13$ppvAYtFKto1HwuDnjQQC/eaGncfUaphTGS6ivHPB6EjDQ5eMoq6Pa', 'modou@gmail.com');
+(4, 'admin', '[\"ROLE_ADMIN\"]', '$2y$13$wU0F2HfXchoaivf1Cq3V5.KkwJ2drilFOYqyS0cli9hLdtAeywaOi', 'admin@admin.com');
 
 --
 -- Index pour les tables déchargées
@@ -175,7 +173,7 @@ ALTER TABLE `property`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
